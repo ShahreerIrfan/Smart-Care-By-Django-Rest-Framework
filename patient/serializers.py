@@ -7,3 +7,5 @@ class PatientSerializers(serializers.ModelSerializer):
         model = models.Patient
         fields = '__all__'
 
+
+
