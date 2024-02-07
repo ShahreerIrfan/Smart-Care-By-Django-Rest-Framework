@@ -8,18 +8,6 @@ class Patient(models.Model):
 
     def __str__(self) -> str:
         return f"{self.user.first_name} {self.user.last_name}"
-STAR_CHOICES = [
-    ('⭐','⭐'),
-    ('⭐⭐','⭐⭐'),
-    ('⭐⭐⭐','⭐⭐⭐'),
-    ('⭐⭐⭐⭐','⭐⭐⭐⭐'),
-    ('⭐⭐⭐⭐⭐','⭐⭐⭐⭐⭐')
-]    
-# class Review(models.Model):
-#     reviewer = models.ForeignKey(Patient,on_delete=models.CASCADE)
-#     doctor = models.ForeignKey(Doctor, on_delete = models.CASCADE)
-#     body = models.TextField()
-#     created = models.DateTimeField(auto_now_add=True)
-#     rating = models.CharField(choices = STAR_CHOICES)
+
 
 
