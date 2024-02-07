@@ -17,7 +17,8 @@ class SpcealizationAdmin(admin.ModelAdmin):
 class DesignationAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug':('name',),}
 
-    
+
 admin.site.register(Spcealization,SpcealizationAdmin)
 admin.site.register(Designation,DesignationAdmin)
 admin.site.register(Doctor)
+ 
