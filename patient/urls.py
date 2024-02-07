@@ -9,4 +9,3 @@ router.register('', views.ContactViewSet, )
 urlpatterns = [
     path('', include(router.urls)),
 ]
-
