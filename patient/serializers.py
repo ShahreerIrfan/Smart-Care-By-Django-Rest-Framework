@@ -8,4 +8,3 @@ class PatientSerializers(serializers.ModelSerializer):
         fields = '__all__'
 
 
-
