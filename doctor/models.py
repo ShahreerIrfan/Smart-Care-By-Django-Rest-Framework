@@ -25,7 +25,7 @@ class Doctor(models.Model):
     image = models.ImageField(upload_to="doctor/images")
     designation = models.ManyToManyField(Designation)
     spcealization = models.ManyToManyField(Spcealization)
-    availabletime = models.ForeignKey(AvailableTime,on_delete = models.CASCADE)
+    availabletime = models.ManyToManyField(AvailableTime)
     fee = models.IntegerField()
     meet_link = models.CharField(max_length = 20)
 
