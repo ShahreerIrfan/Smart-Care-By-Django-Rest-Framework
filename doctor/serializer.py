@@ -3,6 +3,9 @@ from . import models
 
 class DoctorSerializer(serializers.ModelSerializer):
     user = serializers.StringRelatedField(many=False)
+    designation = serializers.StringRelatedField(many=True)
+    spcealization = serializers.StringRelatedField(many=True)
+    availabletime = serializers.StringRelatedField(many=True)
     class Meta:
         model = models.Doctor
         fields = '__all__'
