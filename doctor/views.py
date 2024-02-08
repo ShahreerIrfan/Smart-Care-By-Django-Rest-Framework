@@ -20,3 +20,7 @@ class AvailableTimeViewSet(viewsets.ModelViewSet):
 class DoctorViewSet(viewsets.ModelViewSet):
     queryset = models.Doctor.objects.all()
     serializer_class = serializer.DoctorSerializer
+
+class ReviewViewSet(viewsets.ModelViewSet):
+    queryset = models.Review.objects.all()
+    serializer_class = serializer.ReviewSerializer
