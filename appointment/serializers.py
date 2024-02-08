@@ -8,3 +8,5 @@ class AppointmentSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Appointment
         fields = "__all__"
+
+# ......
