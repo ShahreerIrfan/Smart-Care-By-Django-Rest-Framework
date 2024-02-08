@@ -6,23 +6,20 @@ class DoctorSerializer(serializers.ModelSerializer):
     class Meta:
         model = models.Doctor
         fields = '__all__'
-class DoctorSerializer(serializers.ModelSerializer):
+class SpcealizationSerializer(serializers.ModelSerializer):
     user = serializers.StringRelatedField(many=False)
     class Meta:
-        model = models.Doctor
+        model = models.Spcealization
         fields = '__all__'
-class DoctorSerializer(serializers.ModelSerializer):
-    user = serializers.StringRelatedField(many=False)
+class DesignationSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models.Doctor
+        model = models.Designation
         fields = '__all__'
-class DoctorSerializer(serializers.ModelSerializer):
-    user = serializers.StringRelatedField(many=False)
+class AvailableTimeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models.Doctor
+        model = models.AvailableTime
         fields = '__all__'
-class DoctorSerializer(serializers.ModelSerializer):
-    user = serializers.StringRelatedField(many=False)
+class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models.Doctor
+        model = models.Review
         fields = '__all__'
